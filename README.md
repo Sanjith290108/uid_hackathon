@@ -14,3 +14,7 @@ This project has the following files:
 Every page as a common nav bar in the header and a footer that includes hyperlinks to homepage, events page and feedback page
 events page has form validation implemented using javascript 
 The footer includes a telephone helpline number
+
+Homepage : main page for the website
+Events page : page displaying events and form for signing up to the events
+Feedback page: page to write feedback about events
