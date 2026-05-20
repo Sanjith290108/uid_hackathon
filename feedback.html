@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home Page</a>
+            <a href="events.html">Events Page</a>
+            <a href="feedback.html">Feedback Page</a>
+        </nav>
+    </header>
+    <h2>Event Feedback Form</h2>
+    <form>
+        <label for="name">Student Name:</label><br>
+        <input type="text" id="name" name="name" required minlength="3">
+        <br><br>
+        <label for="regno">Register Number:</label><br>
+        <input type="text" id="regno" name="regno" required>
+        <br><br>
+        <label for="event">Event Attended:</label><br>
+        <select id="event" name="event" required>
+            <option value="">--Select Event--</option>
+            <option value="capture_the_flag">Capture the Flag</option>
+            <option value="dj_night">DJ Night</option>
+            <option value="ai_ted_talk">AI Ted Talk</option>
+            <option value="battle_of_bands">Battle of Bands</option>
+        </select>
+        <br><br>
+        <label for="rating">Rating (1 to 5):</label><br>
+        <input type="number" id="rating" name="rating" min="1" max="5" required>
+        <br><br>
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Enter your feedback here..." required></textarea>
+        <br><br>
+        <input type="submit" value="Submit Feedback">
+        <input type="reset" value="Reset">
+    </form>
+    <footer>
+      <label>For any queries</label></br>
+      <label>Call us - </label><a href="tel:+91 7899285651">+91 7899285651 </a><br>
+      <label>Email us - </label><a href="mailto:bl.sc.u4cse25209@bl.students.amrita.edu">Bl.sc.u4cse25209@bl.students.amrita.edu</a><br>
+    </footer>
+</body>
+</html>
