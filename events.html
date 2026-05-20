@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Events.</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav>
+<a href="index.html">  home page</a>
+<a href="events.html"> events page</a>
+<a href="feedback.html">feedback page</a>
+</nav>
+</header>
+<table>
+  <tr>
+    <th> EVENT ID:</th>
+    <th>NAME:</th>
+    <th>CATEGORY</th>
+    <th> DATE/TIME</th>
+    <th>VENUE</th>
+    <th>FEE</th>
+    <th>STATUS</th>
+  </tr>
+  <tr>
+    <th> 001</th>
+    <th> capture the flag</th>
+    <th> team activity</th>
+    <th> 11th june 12:20</th>
+    <th> football ground </th>
+    <th> 300 </th>
+    <th> open</th>
+  </tr>
+  <tr>
+    <th>002</th>
+    <th> Dj night </th>
+    <th> dance </th>
+    <th> 12th june. 8:00 pm</th>
+    <th> concert hall </th>
+    <th> 400</th>
+    <th> open</th>
+  </tr>
+  <tr>
+    <th> 003 </th>
+    <th> concert </th>
+    <th> music </th>
+    <th> 13th june 9:00 pm</th>
+    <th> concert hall</th>
+    <th> 500 </th>
+    <th> regsitration closed </th>
+    </tr>
+    <tr>
+      <th>004</th>
+      <th> AI ted talk </th>
+      <th> information technology </th>
+      <th> 14th june. 9:00 am</th>
+      <th> auditorium </th>
+      <th> 400 </th>
+      <th> open</th>
+    </tr>
+    <tr>
+      <th>005</th>
+      <th> Battle of bands </th>
+      <th>music </th>
+      <th> 14th june. 8:00 pm</th>
+      <th> concert hall </th>
+      <th> 400 </th>
+      <th> open</th>
+    </tr>
+  </table>
+  <div id="formcard">
+  <form id="eventform">
+    <label>name </label><br>
+    <input type="text" id="name"><br><br>
+    <label> roll no: </label><br>
+    <input type="number" id="rollno"><br><br>
+    <label> event sleection</label><br>
+    <select id="select">
+      <option> capture the flag</option>
+      <option> dj night </option>
+      <!--<option> concert</option>-->
+      <option> AI ted talk </option>
+      <option> Battle of bands </option>
+    </select><br><br>
+    <label> participation type </label><br>
+    <input type="radio" name="g" id="type"> solo 
+    <input type="radio" name="g" id="type"> team
+    <br><br>
+    <label> team name </label><br>
+    <input type="text" id="teamname"><br><br>
+    <label> team size </label><br>
+    <input type="number " min="1" id="teamno"><br><br>
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+  </form>
+  </div>
+  <div id="displaycard">
+    <ul id="projectlist">
+    </ul>
+  </div>
+  <script>
+    let projects=[]
+    document.getElementById("eventform").addEventListener("submit",function(event){
+      event.preventDefault();
+      let studname=document.getElementById("name").value.trim();
+      let rollno=parseInt(document.getElementById("rollno").value.trim());
+      let select=document.getElementById("select").value.trim();
+      let teamname=document.getElementById("teamname").value.trim();
+      if (studname === "" || teamname === "")
+        alert("fill all fields")
+        }
+        let projectdata={
+          name: studname,
+          rollnumber: rollno,
+          teamname: teamname,
+          event: select
+        };
+        projects.push(projectdata);
+        displayprojects()
+        document.getElementById("eventform").reset();
+    });
+    function displayprojects()
+      let projectlist=document.getElementById("projectlist");
+      projectlist.innerHTML="";
+      for (let i = 0; i < projects.length; i++)
+        let li = document.createElement("li");
+         li.textContent =
+            projects[i].name + " - " +
+            projects[i].rollnumber + " - " +
+            projects[i].teamname + " - " +
+            projects[i].event;
+        projectlist.appendChild(li);
+      }
+    }
+  </script>
+</body>
+</html>
