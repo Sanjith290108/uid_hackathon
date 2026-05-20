@@ -61,6 +61,15 @@ footer a{
   text-align:center;
   float:center;
 }
-table {
+table,th,td {
   border:1px solid black;
+}
+form{
+  text-align:center;
+}
+#formcard,#displaycard{
+  margin:20px auto;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
