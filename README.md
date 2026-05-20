@@ -11,5 +11,6 @@ This project has the following files:
 #script.js
 #banner.jpg
 
-Every page as a common nav bar that includes hyperlinks to homepage, events page and feedback page
+Every page as a common nav bar in the header and a footer that includes hyperlinks to homepage, events page and feedback page
 events page has form validation implemented using javascript 
+The footer includes a telephone helpline number
