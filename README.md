@@ -9,6 +9,5 @@ This project has the following files:
   /feedback.html
   /style.css
   /script.js
-  /images/
-    /banner.jpg
-    /event-related-images
+  /banner.jpg
+    
