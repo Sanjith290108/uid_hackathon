@@ -10,4 +10,6 @@ This project has the following files:
 #style.css
 #script.js
 #banner.jpg
-    
+
+Every page as a common nav bar that includes hyperlinks to homepage, events page and feedback page
+events page has form validation implemented using javascript 
