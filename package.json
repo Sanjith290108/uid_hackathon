@@ -1,0 +1,16 @@
+{
+  "name": "descriptive-bike-create-1699g",
+  "productName": "descriptive-bike-create-1699g",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "exam",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "41.1.1"
+  }
+}
